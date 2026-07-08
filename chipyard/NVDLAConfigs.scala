@@ -3,7 +3,7 @@ package chipyard
 import org.chipsalliance.cde.config.Config
 
 class SmallNVDLARocketConfig extends Config(
-  new nvidia.blocks.dla.WithNVDLA("small") ++               // add a small NVDLA
+  new nvidia.blocks.dla.WithNVDLA("small", true) ++               // add a small NVDLA
   new freechips.rocketchip.rocket.WithNHugeCores(1) ++
   new chipyard.config.AbstractConfig)
 
